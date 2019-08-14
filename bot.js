@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "#"
+var prefix = "."
 
 
 client.on('ready', function() {
@@ -18,7 +18,7 @@ client.on('ready', function() {
 
 
 const developers = ["482653215159222282","522764310313697282",""]
-const adminprefix = "#";
+const adminprefix = ".";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
